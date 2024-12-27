@@ -1,0 +1,23 @@
+/* use variables when about:config variable userChrome.theme-muji is true */
+@media (-moz-bool-pref: "userChrome.theme-muji") {
+  :root,
+  html,
+  body {
+    --md-accent-color: #bd93f9;
+    --md-selection-text-color: var(--md-black);
+    --md-selection-background-color: #bd93f9;
+    --md-background-color-0: #252b42; /* Tab bar, dropdowns background and search bar on new tab */
+    --md-background-color-50: #2b3247; /* URL bar and popup when searching */
+    --md-background-color-100: #3b3f59; /* Background */
+    --md-menu-border-color: #373b54; /* Dropdowns border */
+    --md-urlbar-background-color-hover: #9143ff85; /* URL bar hover */
+    --md-elevation-4: 0px 13px 27px -5px rgba(0, 0, 0, 0.28); /* Popup when searching */
+    --md-menu-background-color-hover: #9143ff85; /* Popup menu background hover */
+    --md-tab-background-color-hover: #9143ff85; /* Tab background hover and Edit icon on new tab page */
+    --md-content-separator-color: #4b506e; /* Bookmarks bar bottom border color */
+  }
+}
+
+findbar .findbar-container {
+  padding-right: 5px;
+}
